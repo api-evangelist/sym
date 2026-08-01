@@ -1,0 +1,31 @@
+generated: '2026-07-21'
+method: searched
+source: https://pypi.org/project/sym-flow-cli/ + docs.symops.com
+name: symflow
+description: >-
+  symflow is Sym's official CLI for implementers. It is the primary way to
+  interact with the Sym control plane — authenticating an implementer to their
+  organization and inspecting the Terraform-managed Sym resources (flows,
+  environments, integrations) that make up a deployment.
+binary: symflow
+package:
+  registry: pypi
+  name: sym-flow-cli
+  version: 8.1.0
+  url: https://pypi.org/project/sym-flow-cli/
+install:
+  - method: pip
+    command: pip install sym-flow-cli
+authentication:
+  style: browser-based SSO login to the Sym control plane
+  command: symflow login
+commands:
+  - name: login
+    description: Authenticate the implementer to their Sym organization.
+  - name: resources
+    description: View the organization's Terraform-managed Sym resources.
+  - name: services
+    description: Inspect Sym services/integrations configured for the organization.
+notes: >-
+  Command surface captured from Sym docs and the sym-flow-cli package. The Sym
+  product is largely wound down; the CLI package remains published on PyPI.

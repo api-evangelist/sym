@@ -1,0 +1,44 @@
+generated: '2026-07-21'
+method: searched
+source: https://headwayapp.co/sym-changelog
+url: https://headwayapp.co/sym-changelog
+scheme: dated-release-notes
+notes: >-
+  Sym publishes product updates via a Headway changelog covering the platform,
+  Python SDK, integrations, and web app. Entries below are the recent window as
+  captured; Headway dates were not reliably extractable at capture time, so
+  dates are omitted rather than guessed. The changelog reflects historical
+  product development (the Sym product is now largely wound down).
+entries:
+  - title: "Email Notifications, Web Updates, and More"
+    tags: [new, sdk, improvement]
+    highlights: >-
+      Refactor separating notifications from permissions; Google Secrets support added.
+  - title: "Sym for GCP"
+    tags: [new, integration]
+    highlights: >-
+      Google Groups Access Strategy and GCP support via Workload Identity Federation.
+  - title: "Control Who Can See Which Flows"
+    tags: [new]
+    highlights: >-
+      New get_flows reducer lets admins filter flow visibility by user attributes.
+  - title: "Web App Improvements"
+    tags: [new, improvement]
+    highlights: >-
+      Adds a "My requests" filter and improved error visibility in the web interface.
+  - title: "Native Jira Integration"
+    tags: [new, integration]
+    highlights: >-
+      Official Jira marketplace integration — ticket creation and JQL searches.
+  - title: "Multiselect Targets"
+    tags: [new, improvement]
+    highlights: >-
+      Multiple targets in a single request for Okta, AWS SSO, and AWS IAM.
+  - title: "A Web App for Sym"
+    tags: [new]
+    highlights: >-
+      Launch of a web platform for access-request management and audit analytics.
+  - title: "Dynamic, Conditional Fields"
+    tags: [new, sdk]
+    highlights: >-
+      Runtime field configuration for contextual prompt rendering based on user inputs.
